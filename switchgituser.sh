@@ -1,10 +1,14 @@
 #!/bin/bash
-developers="matt.simpson amos.king kenny.ortmann lori.cross arumugam.deivanayaga craig.buchek"
+developers="matt.simpson amos.king lori.cross craig.buchek helena.wotring bj.self nick.bimpasis mario.aquino ben.grove steve.kanter"
 declare -A github
 github[matt.simpson]='coffeencoke'
 github[amos.king]='adkron'
-github[kenny.ortmann]='yairgo'
 github[craig.buchek]='booch'
+github[helena.wotring]='n3rdgir1'
+github[nick.bimpasis]='elgreco'
+github[mario.aquino]='marioaquino'
+github[steve.kanter]='stlskanter'
+
 REPO=git # Put your git repo here.
 
 function update_gitconfig() {
@@ -24,5 +28,3 @@ select USER in $developers; do
 
     break
 done
-
-
